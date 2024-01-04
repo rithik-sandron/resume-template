@@ -5,6 +5,7 @@ To use this
 - npm i
 - replace the placeholders with your data in `assets/template.js`.
 - npm start
+- `Ctrl + P` & save as pdf
 
 ## Sample
 

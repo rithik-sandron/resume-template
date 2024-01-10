@@ -13,26 +13,23 @@ function App() {
           {details.description}
         </div>
 
-        <div className="contact">
-          <div className="icon-wrap">
-            <div className="icon">
-              <img src={g} alt="" />
-              <p>github.com/username</p>
-            </div>
-
-            {details.contacts.map((x) => {
-              return (
-                <div className="icon">
-                  <span class="material-symbols-rounded">{x.y}</span>
-                  <p>{x.x}</p>
-                </div>
-              );
-            })}
+        <div className="icon-wrap">
+          <div className="icon">
+            <img src={g} alt="" />
+            <p>github.com/username</p>
           </div>
+
+          {details.contacts.map((x) => {
+            return (
+              <div className="icon">
+                <span class="material-symbols-rounded">{x.y}</span>
+                <p>{x.x}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
 
-      <br />
       <br />
       <Section tile="Technical Skills" obj={details.skills} />
       <Section tile="Personal Skills" obj={details.personal_skills} />

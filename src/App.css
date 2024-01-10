@@ -75,7 +75,7 @@ h1 {
 b {
   font-weight: 600;
   text-decoration: underline;
-  text-underline-offset: 3.5px;
+  text-underline-offset: 4px;
 }
 
 h2 {
@@ -112,7 +112,7 @@ li {
 
 .inline {
   list-style-type: none;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.3em;
 }
 
 .inline > li {
@@ -163,30 +163,23 @@ h3 {
 .main {
   display: grid;
   grid-template-columns: calc(70% - 4em) 30%;
-  gap: 4em;
-  margin-top: 2.2em;
+  gap: 5em;
+  margin-top: 1.8em;
 }
 
 .contact {
   display: block;
 }
 
-.contact > h3 {
-  font-size: 1.3em;
-  font-weight: 450;
-  line-height: 1.6;
-  margin-top: 0.8em;
-}
-
 .icon-wrap {
-  display: block;
-  gap: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .icon {
   display: flex;
   gap: 2em;
-  margin: 1.6em 0;
 }
 
 .icon > span {
@@ -209,10 +202,10 @@ h3 {
 
 .e > h3 {
   font-size: calc(1.15em + 0.3vw);
-  margin-bottom: 0.6em;
+  margin-bottom: 0.3em;
   font-weight: 600;
   width: fit-content;
-  padding-bottom: 1px;
+  margin-top: 0;
 }
 
 .e > h2 {
@@ -221,7 +214,7 @@ h3 {
   font-weight: 600;
   border: none;
   display: block;
-  margin-bottom: 0;
+  margin: 0;
   letter-spacing: -0.2px;
 }
 
@@ -304,8 +297,7 @@ time::before {
   list-style-type: none;
   font-weight: 600;
   letter-spacing: 0;
-  padding: 0 0.8em;
-  padding-bottom: 0.1em;
+  padding: 0.1em 0.8em 0.2em 0.8em;
   border-radius: 1em;
   letter-spacing: 0.15px;
   align-self: flex-start;
